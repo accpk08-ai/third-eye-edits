@@ -32,7 +32,6 @@ footer{text-align:center;color:#8f8fa5;font-size:12px;padding:5px 22px 30px;line
 /* Premium design upgrade */
 </style>
 </head>
-  <meta name="google-site-verification" content="mqIxXtS1VvmisZigcNqJPdRvdpLzxgMzGX3UWy3-3M4" />
 <body>
 <header><div class="brand"><div class="logo">◉</div><div><h1>Third eye Edits</h1><p>See your photos in a new light ✦</p></div></div></header>
 <main>
@@ -100,47 +99,7 @@ function copyPrompt(i){copyText(promptEls[i].textContent.trim());}
 document.getElementById('copyCustom').addEventListener('click',()=>{const t=document.getElementById('custom').value.trim();if(!t){alert('Write a prompt first.');return;}copyText(t);});
 document.getElementById('clearCustom').addEventListener('click',()=>document.getElementById('custom').value='');
 </script>
-</body></html>r('change', e => {
-  const f = e.target.files && e.target.files[0];
-  if(!f)return;
-  if(!f.type.startsWith('image/')){alert('Please choose an image file.');return;}
-  const u = URL.createObjectURL(f);
-  const i = new Image();
-  i.onload = () => {
-    original = i;
-    currentFilter = 'none';
-    rotation = 0;
-    flipped = false;
-    resetSliders();
-    document.querySelectorAll('.filter').forEach(b => b.classList.toggle('active', b.dataset.filter === 'none'));
-    render();
-    URL.revokeObjectURL(u);
-  };
-  i.src = u;
-});
-
-document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', () => {
-  currentFilter = b.dataset.filter;
-  document.querySelectorAll('.filter').forEach(x => x.classList.toggle('active', x === b));
-  render();
-}));
-
-document.getElementById('rotateBtn').addEventListener('click', () => {
-  if(!original) return;
-  rotation = (rotation + 90) % 360;
-  render();
-});
-
-document.getElementById('flipBtn').addEventListener('click', () => {
-  if
-arget.files[0];if(!f)return;if(!f.type.startsWith('image/')){alert('Please choose an image file.');return;}const u=URL.createObjectURL(f);const i=new Image();i.onload=()=>{original=i;currentFilter='none';document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.dataset.filter==='none'));render();URL.revokeObjectURL(u)};i.onerror=()=>alert('Could not open this image. Please try another.');i.src=u;});
-document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{currentFilter=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));render();}));
-document.getElementById('reset').addEventListener('click',()=>{currentFilter='none';document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.dataset.filter==='none'));render();});
-document.getElementById('save').addEventListener('click',()=>{if(!original){alert('Please add a photo first.');return;}const a=document.createElement('a');a.href=canvas.toDataURL('image/jpeg',.94);a.download='third-eye-edits.jpg';a.click();});
-const promptEls=[...document.querySelectorAll('#prompts .prompt p')];
-async function copyText(t){try{await navigator.clipboard.writeText(t);alert('Copied! Paste it into your AI photo editor.');}catch(e){const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();alert('Prompt copied.');}}
-function copyPrompt(i){copyText(promptEls[i].textContent.trim());}
-document.getElementById('copyCustom').addEventListener('click',()=>{const t=document.getElementById('custom').value.trim();if(!t){alert('Write a prompt first.');return;}copyText(t);});
-document.getElementById('clearCustom').addEventListener('click',()=>document.getElementById('custom').value='');
+</body>
+</html>
 </script>
 </body></html>
