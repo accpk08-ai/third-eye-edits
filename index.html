@@ -6,214 +6,100 @@
 <meta name="theme-color" content="#101018">
 <title>Third eye Edits</title>
 <style>
-:root{
-  --bg:#101018;
-  --panel:#1b1b27;
-  --muted:#a8a8bc;
-  --text:#f7f7fb;
-  --accent:#a78bfa;
-  --accent2:#67e8f9;
-}
-*{box-sizing:border-box}
-body{margin:0;background:radial-gradient(ellipse at top,#242039 0,#101018 52%);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}
+:root{--bg: #09090f;
+--card: #151520;
+--accent: #a855f7;
+--text: #ffffff;
+--muted: #a1a1b5;
+  --bg:#101018;--panel:#1b1b27;--muted:#a8a8bc;--text:#f7f7fb;--accent:#a78bfa;--accent2:#67e8f9}
+*{box-s*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#242039 0,#101018 52%);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}izing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#242039 0,#101018 52%);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}
 header{padding:24px 18px 16px;position:sticky;top:0;background:#101018eF;backdrop-filter:blur(12px);z-index:3;border-bottom:1px solid #ffffff12}
-.brand{display:flex;align-items:center;gap:11px}
-.logo{width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#151321;font-size:23px;font-weight:900}
-.brand h1{font-size:21px;line-height:1.1;margin:0}
-.brand p{margin:4px 0 0;color:var(--muted);font-size:12px}
-main{max-width:760px;margin:auto;padding:16px;display:grid;gap:15px}
-.card{background:#1b1b27eF;border:1px solid #ffffff13;border-radius:20px;padding:16px;box-shadow:0 12px 35px #0002}
-h2{font-size:17px;margin:0 0 12px}
-p.help{font-size:13px;color:var(--muted);line-height:1.5;margin:7px 0 0}
+.brand{display:flex;align-items:center;gap:11px}.logo{width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#151321;font-size:23px;font-weight:900}.brand h1{font-size:21px;line-height:1.1;margin:0}.brand p{margin:4px 0 0;color:var(--muted);font-size:12px}
+main{max-width:760px;margin:auto;padding:16px;display:grid;gap:15px}.card{background:#1b1b27eF;border:1px solid #ffffff13;border-radius:20px;padding:16px;box-shadow:0 12px 35px #0002}
+h2{font-size:17px;margin:0 0 12px}p.help{font-size:13px;color:var(--muted);line-height:1.5;margin:7px 0 0}
 .upload{border:1px dashed #8278a8;border-radius:15px;padding:16px;text-align:center;background:#ffffff04}
-input[type=file]{width:100%;color:var(--muted);font-size:13px}
-button,.btn{border:0;border-radius:12px;padding:12px 14px;background:#302a45;color:var(--text);font-weight:650;font-size:14px;cursor:pointer}
+input[type=file]{width:100%;color:var(--muted);font-size:13px}button,.btn{border:0;border-radius:12px;padding:12px 14px;background:#302a45;color:var(--text);font-weight:650;font-size:14px;cursor:pointer}
 button.primary{background:linear-gradient(100deg,#a78bfa,#67e8f9);color:#171522}
-button:active{transform:scale(.98)}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.actions button{flex:1;min-width:110px}
+button:active{transform:scale(.98)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.actions button{flex:1;min-width:110px}
 .previewWrap{background:#0a0a10;border-radius:14px;min-height:150px;display:grid;place-items:center;overflow:hidden;margin-top:12px}
-#photo{display:block;max-width:100%;max-height:55vh;object-fit:contain}
-#empty{padding:36px 16px;color:#88889d;text-align:center}
-.filtergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.filter{padding:10px 5px;border:1px solid #ffffff14;background:#222231;border-radius:12px;text-align:center;cursor:pointer}
-.filter.active{border-color:var(--accent2);box-shadow:inset 0 0 0 1px var(--accent2);background:#27273a}
-.filter span{display:block;font-size:12px;color:#d5d5e4;margin-top:5px}
-
-/* Sliders section */
-.slider-group{display:grid;gap:12px;margin-top:12px}
-.slider-row{display:flex;flex-direction:column;gap:4px}
-.slider-row label{font-size:13px;color:var(--muted);display:flex;justify-content:space-between}
-input[type=range]{width:100%;accent-color:var(--accent)}
-
-.promptlist{display:grid;gap:9px}
-.prompt{background:#242434;border:1px solid #ffffff12;border-radius:13px;padding:12px}
-.prompthead{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.prompthead strong{font-size:14px}
-.prompt p{font-size:12px;color:#c2c2d3;line-height:1.45;margin:8px 0}
-.prompt button{padding:8px 10px;font-size:12px}
+#photo{display:block;max-width:100%;max-height:55vh;object-fit:contain}#empty{padding:36px 16px;color:#88889d;text-align:center}
+.filtergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.filter{padding:10px 5px;border:1px solid #ffffff14;background:#222231;border-radius:12px;text-align:center}.filter.active{border-color:var(--accent2);box-shadow:inset 0 0 0 1px var(--accent2);background:#27273a}.filter span{display:block;font-size:12px;color:#d5d5e4;margin-top:5px}
+.promptlist{display:grid;gap:9px}.prompt{background:#242434;border:1px solid #ffffff12;border-radius:13px;padding:12px}.prompthead{display:flex;justify-content:space-between;align-items:center;gap:8px}.prompthead strong{font-size:14px}.prompt p{font-size:12px;color:#c2c2d3;line-height:1.45;margin:8px 0}.prompt button{padding:8px 10px;font-size:12px}
 textarea{width:100%;min-height:96px;resize:vertical;border-radius:12px;border:1px solid #ffffff1c;background:#11111b;color:var(--text);padding:12px;font:13px/1.5 system-ui}
 footer{text-align:center;color:#8f8fa5;font-size:12px;padding:5px 22px 30px;line-height:1.6}
 .notice{font-size:12px;color:#c5c3d7;background:#2b2540;border-radius:12px;padding:11px;line-height:1.5}
-@media(min-width:650px){main{grid-template-columns:1fr 1fr;align-items:start}.wide{grid-column:1/-1}}
+@media(min-width:650px){main{grid-template-columns:1fr 1fr;align-items:start}.wide{grid-column:1/-1}.filtergrid{grid-template-columns:repeat(3,1fr)}}
+/* Premium design upgrade */
 </style>
 </head>
 <body>
-<header>
-  <div class="brand">
-    <div class="logo">◉</div>
-    <div><h1>Third eye Edits</h1><p>See your photos in a new light ✦</p></div>
-  </div>
-</header>
-
+<header><div class="brand"><div class="logo">◉</div><div><h1>Third eye Edits</h1><p>See your photos in a new light ✦</p></div></div></header>
 <main>
 <section class="card">
-  <h2>1. Add your photo</h2>
-  <div class="upload">
-    <input id="file" type="file" accept="image/*">
-    <p class="help">Choose a photo from your device to begin editing.</p>
-  </div>
-  <div class="previewWrap">
-    <div id="empty">Your photo preview will appear here</div>
-    <img id="photo" alt="Photo preview" hidden>
-  </div>
-  <div class="actions">
-    <button id="reset">Reset All</button>
-    <button class="primary" id="saveJpg">Save JPG</button>
-    <button class="primary" id="savePng">Save PNG</button>
-  </div>
+<h2>1. Add your photo</h2>
+<div class="upload"><input id="file" type="file" accept="image/*"><p class="help">Choose a photo from your phone. Your photo is processed in this browser in this prototype.</p></div>
+<div class="previewWrap"><div id="empty">Your photo preview will appear here</div><img id="photo" alt="Photo preview" hidden></div>
+<div class="actions"><button id="reset">Reset</button><button class="primary" id="save">Save edited photo</button></div>
+<p class="help">Tip: for best results, use a clear photo with good lighting.</p>
 </section>
-
 <section class="card">
-  <h2>2. Choose a filter</h2>
-  <div class="filtergrid" id="filters">
-    <button class="filter active" data-filter="none">Original<span>Natural</span></button>
-    <button class="filter" data-filter="cinematic">🎬 Cinematic<span>Moody contrast</span></button>
-    <button class="filter" data-filter="bw">◐ B&W<span>Monochrome</span></button>
-    <button class="filter" data-filter="warm">☀ Warm<span>Golden tones</span></button>
-    <button class="filter" data-filter="cool">❄ Cool<span>Blue shadows</span></button>
-    <button class="filter" data-filter="vintage">✦ Vintage<span>Faded film</span></button>
-    <button class="filter" data-filter="vivid">🌈 Vivid<span>Extra color</span></button>
-    <button class="filter" data-filter="soft">☁ Soft<span>Gentle light</span></button>
-    <button class="filter" data-filter="night">🌃 Night<span>Dark drama</span></button>
-  </div>
+<h2>2. Choose a filter</h2>
+<div class="filtergrid" id="filters">
+<button class="filter active" data-filter="none">Original<span>Natural</span></button>
+<button class="filter" data-filter="cinematic">🎬 Cinematic<span>Moody contrast</span></button>
+<button class="filter" data-filter="bw">◐ B&W<span>Monochrome</span></button>
+<button class="filter" data-filter="warm">☀ Warm<span>Golden tones</span></button>
+<button class="filter" data-filter="cool">❄ Cool<span>Blue shadows</span></button>
+<button class="filter" data-filter="vintage">✦ Vintage<span>Faded film</span></button>
+<button class="filter" data-filter="vivid">🌈 Vivid<span>Extra color</span></button>
+<button class="filter" data-filter="soft">☁ Soft<span>Gentle light</span></button>
+<button class="filter" data-filter="night">🌃 Night<span>Dark drama</span></button>
+</div>
+<p class="help">These are basic browser-based color effects. AI transformations need an AI image-editing service.</p>
 </section>
-
 <section class="card wide">
-  <h2>3. Fine-tune adjustments & Transforms</h2>
-  <div class="actions" style="margin-top:0;margin-bottom:12px;">
-    <button id="rotateBtn">Rotate 90°</button>
-    <button id="flipBtn">Flip Horizontal</button>
-  </div>
-  <div class="slider-group">
-    <div class="slider-row">
-      <label>Brightness <span id="valBrightness">100%</span></label>
-      <input type="range" id="brightness" min="0" max="200" value="100">
-    </div>
-    <div class="slider-row">
-      <label>Contrast <span id="valContrast">100%</span></label>
-      <input type="range" id="contrast" min="0" max="200" value="100">
-    </div>
-    <div class="slider-row">
-      <label>Saturation <span id="valSaturation">100%</span></label>
-      <input type="range" id="saturation" min="0" max="200" value="100">
-    </div>
-    <div class="slider-row">
-      <label>Blur <span id="valBlur">0px</span></label>
-      <input type="range" id="blur" min="0" max="20" value="0">
-    </div>
-  </div>
+<h2>3. Ready-made AI prompts</h2>
+<p class="help" style="margin-top:-5px;margin-bottom:12px">Copy a prompt and paste it into an AI photo editor that supports image upload and prompt-based editing.</p>
+<div class="promptlist" id="prompts">
+<div class="prompt"><div class="prompthead"><strong>Cinematic portrait</strong><button onclick="copyPrompt(0)">Copy prompt</button></div><p>Transform this photo into a cinematic editorial portrait with rich contrast, subtle film grain, dramatic but natural lighting, realistic skin texture, and a refined color grade. Preserve the person's identity, facial features, pose, clothing, and composition.</p></div>
+<div class="prompt"><div class="prompthead"><strong>Black & white fashion</strong><button onclick="copyPrompt(1)">Copy prompt</button></div><p>Create a high-end black-and-white fashion editorial from this photo. Use sculpted studio lighting, deep blacks, bright highlights, detailed natural skin texture, and elegant magazine photography. Keep the person's face and identity unchanged.</p></div>
+<div class="prompt"><div class="prompthead"><strong>Golden-hour glow</strong><button onclick="copyPrompt(2)">Copy prompt</button></div><p>Give this photo a natural golden-hour look with warm sunlight, soft highlights, gentle shadows, realistic colors, and a polished cinematic finish. Preserve the exact face, identity, pose, and background layout.</p></div>
+<div class="prompt"><div class="prompthead"><strong>Cyberpunk neon</strong><button onclick="copyPrompt(3)">Copy prompt</button></div><p>Restyle this photo with a futuristic cyberpunk atmosphere, tasteful magenta and cyan neon reflections, cinematic night lighting, and detailed realistic textures. Preserve the subject's identity, facial structure, pose, and proportions.</p></div>
+<div class="prompt"><div class="prompthead"><strong>Professional profile</strong><button onclick="copyPrompt(4)">Copy prompt</button></div><p>Enhance this image into a professional profile portrait with clean soft lighting, natural skin texture, balanced colors, subtle background separation, and a polished but realistic finish. Do not alter the person's identity or facial features.</p></div>
+<div class="prompt"><div class="prompthead"><strong>Rainy movie scene</strong><button onclick="copyPrompt(5)">Copy prompt</button></div><p>Turn this photo into a dramatic movie still on a rainy evening, with realistic wet reflections, soft atmospheric haze, moody teal-and-amber color grading, and natural cinematic lighting. Keep the subject recognizable and preserve their facial features and pose.</p></div>
+</div>
 </section>
-
 <section class="card wide">
-  <h2>4. Ready-made AI prompts</h2>
-  <p class="help" style="margin-top:-5px;margin-bottom:12px">Copy a prompt and paste it into an AI photo editor.</p>
-  <div class="promptlist" id="prompts">
-    <div class="prompt"><div class="prompthead"><strong>Cinematic portrait</strong><button onclick="copyPrompt(0)">Copy prompt</button></div><p>Transform this photo into a cinematic editorial portrait with rich contrast, subtle film grain, and realistic skin texture.</p></div>
-    <div class="prompt"><div class="prompthead"><strong>Black & white fashion</strong><button onclick="copyPrompt(1)">Copy prompt</button></div><p>Create a high-end black-and-white fashion editorial from this photo with sculpted studio lighting and deep blacks.</p></div>
-    <div class="prompt"><div class="prompthead"><strong>Golden-hour glow</strong><button onclick="copyPrompt(2)">Copy prompt</button></div><p>Give this photo a natural golden-hour look with warm sunlight, soft highlights, and gentle shadows.</p></div>
-  </div>
+<h2>4. Your own prompt</h2>
+<textarea id="custom" placeholder="Example: Give my photo a luxury magazine look with soft studio lighting..."></textarea>
+<div class="actions"><button class="primary" id="copyCustom">Copy my prompt</button><button id="clearCustom">Clear</button></div>
+<p class="help">This copies your text. It does not apply AI edits inside this first version.</p>
 </section>
-
 <section class="card wide">
-  <h2>5. Custom prompt</h2>
-  <textarea id="custom" placeholder="Example: Give my photo a luxury magazine look..."></textarea>
-  <div class="actions">
-    <button class="primary" id="copyCustom">Copy my prompt</button>
-    <button id="clearCustom">Clear</button>
-  </div>
+<h2>Next version</h2>
+<div class="notice">This first version works without an account or paid API. It includes local filters and a prompt library. To generate AI-edited photos directly inside Third eye Edits, we will need to connect an image-editing AI service and securely manage its API key.</div>
 </section>
 </main>
-
-<footer>Third eye Edits · Prototype 2.0</footer>
+<footer>Third eye Edits · Prototype 1.0<br>Use photos you own or have permission to edit. Always review AI-edited images before sharing.</footer>
 <canvas id="canvas" hidden></canvas>
-
 <script>
 const fileInput=document.getElementById('file'), img=document.getElementById('photo'), empty=document.getElementById('empty'), canvas=document.getElementById('canvas'), ctx=canvas.getContext('2d');
 let original=null, currentFilter='none';
-let rotation=0, flipped=false;
-
 const filterCss={
-  none:'',
-  cinematic:'contrast(1.22) saturate(.82) brightness(.92)',
-  bw:'grayscale(1) contrast(1.12)',
-  warm:'sepia(.24) saturate(1.25) brightness(1.04)',
-  cool:'saturate(.9) hue-rotate(12deg) contrast(1.05)',
-  vintage:'sepia(.32) saturate(.78) contrast(.92) brightness(1.05)',
-  vivid:'saturate(1.55) contrast(1.08)',
-  soft:'brightness(1.08) saturate(.88) contrast(.91)',
-  night:'brightness(.72) contrast(1.25) saturate(.82) hue-rotate(8deg)'
+none:'none',cinematic:'contrast(1.22) saturate(.82) brightness(.92)',bw:'grayscale(1) contrast(1.12)',warm:'sepia(.24) saturate(1.25) brightness(1.04)',cool:'saturate(.9) hue-rotate(12deg) contrast(1.05)',vintage:'sepia(.32) saturate(.78) contrast(.92) brightness(1.05)',vivid:'saturate(1.55) contrast(1.08)',soft:'brightness(1.08) saturate(.88) contrast(.91)',night:'brightness(.72) contrast(1.25) saturate(.82) hue-rotate(8deg)'
 };
-
-function render(){
-  if(!original)return;
-  
-  // Handle dimensions based on rotation
-  let w = original.naturalWidth;
-  let h = original.naturalHeight;
-  if(rotation === 90 || rotation === 270) {
-    canvas.width = h;
-    canvas.height = w;
-  } else {
-    canvas.width = w;
-    canvas.height = h;
-  }
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.save();
-  ctx.translate(canvas.width / 2, canvas.height / 2);
-  ctx.rotate((rotation * Math.PI) / 180);
-  if(flipped) ctx.scale(-1, 1);
-
-  // Apply filters and manual sliders
-  let bVal = document.getElementById('brightness').value;
-  let cVal = document.getElementById('contrast').value;
-  let sVal = document.getElementById('saturation').value;
-  let blurVal = document.getElementById('blur').value;
-
-  let baseFilter = filterCss[currentFilter] || '';
-  let customFilter = `brightness(${bVal}%) contrast(${cVal}%) saturate(${sVal}%) blur(${blurVal}px)`;
-  ctx.filter = `${baseFilter} ${customFilter}`;
-
-  ctx.drawImage(original, -w / 2, -h / 2);
-  ctx.restore();
-
-  img.src = canvas.toDataURL('image/jpeg', .94);
-  img.hidden = false;
-  empty.hidden = true;
-}
-
-// Sliders updates display numbers
-['brightness', 'contrast', 'saturation', 'blur'].forEach(id => {
-  const slider = document.getElementById(id);
-  const display = document.getElementById('val' + id.charAt(0).toUpperCase() + id.slice(1));
-  slider.addEventListener('input', () => {
-    display.textContent = slider.value + (id === 'blur' ? 'px' : '%');
-    render();
-  });
-});
-
-fileInput.addEventListener('change', e => {
+function render(){if(!original)return;canvas.width=original.naturalWidth;canvas.height=original.naturalHeight;ctx.filter=filterCss[currentFilter]||'none';ctx.drawImage(original,0,0);ctx.filter='none';img.style.filter='none';img.src=canvas.toDataURL('image/jpeg',.94);img.hidden=false;empty.hidden=true;}
+fileInput.addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;if(!f.type.startsWith('image/')){alert('Please choose an image file.');return;}const u=URL.createObjectURL(f);const i=new Image();i.onload=()=>{original=i;currentFilter='none';document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.dataset.filter==='none'));render();URL.revokeObjectURL(u)};i.onerror=()=>alert('Could not open this image. Please try another.');i.src=u;});
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{currentFilter=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));render();}));
+document.getElementById('reset').addEventListener('click',()=>{currentFilter='none';document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.dataset.filter==='none'));render();});
+document.getElementById('save').addEventListener('click',()=>{if(!original){alert('Please add a photo first.');return;}const a=document.createElement('a');a.href=canvas.toDataURL('image/jpeg',.94);a.download='third-eye-edits.jpg';a.click();});
+const promptEls=[...document.querySelectorAll('#prompts .prompt p')];
+async function copyText(t){try{await navigator.clipboard.writeText(t);alert('Copied! Paste it into your AI photo editor.');}catch(e){const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();alert('Prompt copied.');}}
+function copyPrompt(i){copyText(promptEls[i].textContent.trim());}
+document.getElementById('copyCustom').addEventListener('click',()=>{const t=document.getElementById('custom').value.trim();if(!t){alert('Write a prompt first.');return;}copyText(t);});
+document.getElementById('clearCustom').addEventListener('click',()=>document.getElementById('custom').value='');
+</script>
+</body></html>r('change', e => {
   const f = e.target.files && e.target.files[0];
   if(!f)return;
   if(!f.type.startsWith('image/')){alert('Please choose an image file.');return;}
